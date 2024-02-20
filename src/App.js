@@ -5,6 +5,7 @@ import { faArrowRightFromBracket, faCalendarDays, faCaretDown, faTowerBroadcast,
 import { faFacebook, faInstagram, faWhatsapp, fab } from '@fortawesome/free-brands-svg-icons';
 import { faBell, faCircleQuestion, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import { ContextAPI } from './contextAPI/contextAPI';
+import { useState } from 'react';
 library.add(
     fab,
     faCaretDown,
@@ -28,7 +29,11 @@ library.add(
     faXmark
 )
 const App = () => {
-    return <AllRoutes />
+    const [text, setText] = useState("");
+
+    return <ContextAPI.Provider value={{ text, setText }}>
+                <AllRoutes />
+           </ContextAPI.Provider>
 
 }
 

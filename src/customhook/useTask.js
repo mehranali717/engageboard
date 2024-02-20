@@ -8,11 +8,10 @@ const useTask = () => {
             setTasks(storedTasks)
         }
     }, [])
-
     const setAddRemoveTask = (task) => {
-        localStorage.setItem("task", JSON.stringify(task));
-        const storedTasks = JSON.parse(localStorage.getItem("task"))
-        setTasks(storedTasks);
+        const updatedData = [...tasks, task]
+        localStorage.setItem("task", JSON.stringify(updatedData));
+        setTasks(updatedData);
     }
 
     return [tasks, setAddRemoveTask];

@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Card from "../card/card";
-import useTask from "../../customhook/useTask";
 import CustomModal from "../../modal/modal";
 
-const AddNewTask = ({ task }) => {
-  const [tasks, setAddRemoveTask] = useTask("task");
+const AddNewTask = () => {
   const [toggleModal, setToggleModal] = useState(false)
 
   return <>

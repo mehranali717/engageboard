@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
 
-const Button = ({ className, btnData }) => {
+const Button = (props) => {
     return <>
         {
-            Array.isArray(btnData) ? btnData.map((item, index) => <Link to={item.url} className={`${className}`} key={index}>
+            Array.isArray(props.btnData) ? props.btnData.map((item, index) => <Link to={item.url} className={`${props.className}`} key={index}>
                 {item.text}
             </Link>
-            ) : <button className={`${className}`} >{btnData}</button>}
+            ) : <button
+            {...props}
+            className={`${props.className}`} >{props.btnData}</button>}
     </>
 }
 export default Button
