@@ -1,0 +1,46 @@
+.CircularProgressbar {
+    width: 80px;
+    height: 88px;
+}
+.CircularProgressbar-path {
+    stroke: #72BFBD !important;
+}
+.CircularProgressbar-text {
+    fill: #606465 !important;
+}
+.progress {
+    width: 433px;
+    border-radius: 10px;
+    background-color: #F1EBEB;
+    height: 9px;
+}
+.progress-bar {
+    background-color: #72BFBD ;
+    border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+    .CircularProgressbar {
+        width: 50px;
+        height: 50px;
+    }
+    table .progress {
+        width: 70px;
+        height: 9px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .CircularProgressbar {
+        width: 80px;
+        height: 80px;
+    }
+    table .progress {
+        width: 70px;
+        height: 9px;
+    }
+  }
+  @media screen and (min-width: 1536px) {
+    table .progress {
+        width: 116px;
+        height: 9px;
+    }
+  }

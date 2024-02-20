@@ -1,0 +1,24 @@
+.nav-link.active {
+    border: none;
+    color: #3FD7D4 !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-link {
+    padding: 0;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form-check {
+    display: flex;
+    align-items: center;
+}
+.form-check-input {
+    width: 25px;
+    height: 23px;
+    border-radius: 3px;
+    border: 0.5px solid #000;
+    margin-right: 10px;
+}
