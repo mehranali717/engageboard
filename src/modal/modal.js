@@ -3,12 +3,15 @@ import Modal from 'react-bootstrap/Modal';
 import "./modal.css";
 import { Button, FontAwsom, Input, TabNavigation, Task } from '../components';
 import useTask from '../customhook/useTask';
+import { ContextAPI } from '../contextAPI/contextAPI';
 
 const CustomModal = (props) => {
   const [tasks, setAddRemoveTask] = useTask([]);
   const [newTask, setNewTask] = useState()
+  const {text, setText} = useContext(ContextAPI)
   const handleTask = () => {
     setAddRemoveTask(newTask)
+    setText("newTask")
     props.onHide()
   }
   return (
