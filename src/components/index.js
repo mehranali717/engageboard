@@ -17,3 +17,4 @@ export {default as Task} from "./task/task";
 export {default as AddNewTask} from "./addnewtask/addnewtask";
 export {default as Checkbox} from "./checkbox/checkbox";
 export {default as TabNavigation} from "./tabnavigation/tabnavigation";
+export {default as Pagetitle} from "./pagetitle/pagetitle";

@@ -1,7 +1,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import './App.css';
 import AllRoutes from './routes/routes';
-import { faArrowRightFromBracket, faCalendarDays, faCaretDown, faTowerBroadcast, faChartSimple, faHouse, faLayerGroup, faMessage, faMagnifyingGlass, faSliders, faTowerBroa, faMagnifyingGlassdcast, faUser, faPencil, faListCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightFromBracket, faCalendarDays, faCaretDown, faTowerBroadcast, faChartSimple, faHouse, faLayerGroup, faMessage, faMagnifyingGlass, faSliders, faTowerBroa, faMagnifyingGlassdcast, faUser, faPencil, faListCheck, faXmark, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faWhatsapp, fab } from '@fortawesome/free-brands-svg-icons';
 import { faBell, faCircleQuestion, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import { ContextAPI } from './contextAPI/contextAPI';
@@ -26,7 +26,8 @@ library.add(
     faBell,
     faPencil,
     faListCheck,
-    faXmark
+    faXmark,
+    faPlus
 )
 const App = () => {
     const [text, setText] = useState("");

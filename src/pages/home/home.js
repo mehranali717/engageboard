@@ -1,4 +1,4 @@
-import { AgentperformancePlan, BroadcastPlans, Card, Conversationplans, MeetingPlans, PropertyInsightPlans, SubscriptionPlans } from "../../components"
+import { AgentperformancePlan, BroadcastPlans, Card, Conversationplans, MeetingPlans, Pagetitle, PropertyInsightPlans, SubscriptionPlans } from "../../components"
 import { DashboardInnerPlans, StandardPlans, TaskWrapper } from "../../section"
 const StandardPlansData = [
   { title: "In conversation", stats: "350", engagments: "+8 added today" },
@@ -149,7 +149,7 @@ const agentperformanceplanData = [
 ]
 
 const Home = () => <div className="lg:px-[5px] xl:px-[20px] 3xl:px-[39px]">
-  <h2 className="text-[#6D6F6F] text-[20px] font-[500] pb-[12px]">Dashboard</h2>
+      <Pagetitle title="Dashboard" />
       <div className="flex lg:gap-x-[14px] 3xl:gap-x-[29px]">
       <div className="w-[63%] flex flex-col gap-y-[20px]">
       <StandardPlans
