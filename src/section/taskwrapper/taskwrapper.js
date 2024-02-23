@@ -1,3 +1,4 @@
+import React from "react";
 import { AddNewTask, FontAwsom, Task } from "../../components"
 import useTask from "../../customhook/useTask";
 const taskData = [
@@ -11,13 +12,13 @@ const taskData = [
 ]
 const TaskWrapper = () => {
     const [tasks] = useTask([]);
-    return <div>
+    return <React.Fragment>
         <div className="flex gap-x-[12px] items-center py-[8px]">
             <FontAwsom icons={[{ prefix: 'fas', iconName: 'list-check' }]} className="text-[##606465] text-[24px]" />
             <span className="text-[#606465] text-[18px] font-[500] leading-[1]">Task</span>
         </div>
         <Task taskData={tasks} />
         <AddNewTask />
-    </div>
+    </React.Fragment>
 }
 export default TaskWrapper

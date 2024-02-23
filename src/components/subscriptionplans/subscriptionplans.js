@@ -3,7 +3,7 @@ import Progressbar from "../progressbar/progressbar";
 
 const SubscriptionPlans = ({ SubscriptionPlansData }) => <React.Fragment>
     {SubscriptionPlansData.map((item, index) =>
-        <div key={index} className="w-100 flex flex-col">
+        <div key={index} className="flex flex-col">
             <span className="text-[#606465] text-[16px] font-[500] leading-[20px] pb-[19px]">{item.title}</span>
             <div className="w-[95%] flex justify-between pb-[7px] gap-x-[30px]">
                 <div className="flex gap-x-[5px]">

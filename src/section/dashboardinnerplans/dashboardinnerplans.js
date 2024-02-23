@@ -1,6 +1,6 @@
 import React from "react";
 
-const DashboardInnerPlans = ({ children }) => <div className="flex flex-col gap-y-[12px] w-50">
+const DashboardInnerPlans = ({ children }) => <div className="grid gap-y-[8px] ">
     {children}
 </div>
 export default DashboardInnerPlans;

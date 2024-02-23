@@ -159,31 +159,31 @@ const Home = () => <div className="lg:px-[5px] xl:px-[20px] 3xl:px-[39px]">
         engagementStyling="text-[#606465] text-[14px] font-[500] leading-[20px] hover:text-[#DDAF96]"
       />
       
-        <div className="flex gap-[12px] w-100">
+        <div className="grid grid-cols-2 gap-x-[16px] ">
           <DashboardInnerPlans>
-            <Card className="w-100 border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
+            <Card className=" border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
               <MeetingPlans MeetingPlansData={MeetingPlansData} />
             </Card>
 
-            <Card className="w-100 border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
+            <Card className=" border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
               <SubscriptionPlans SubscriptionPlansData={SubscriptionPlansData} />
             </Card>
 
-            <Card className="w-100 border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
+            <Card className=" border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
               <Conversationplans ConversationplansData={ConversationplansData} />
             </Card>
 
-            <Card className="w-100 border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
+            <Card className=" border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px] lg:p-[9px] xl:p-[14px]">
               <BroadcastPlans BroadcastplansData={BroadcastplansData} />
             </Card>
           </DashboardInnerPlans>
 
           <DashboardInnerPlans>
-            <Card className="w-100 border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px]">
+            <Card className=" border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px]">
               <PropertyInsightPlans PropertyInsightplansData={PropertyInsightplansData} />
             </Card>
 
-            <Card className="w-100 border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px]">
+            <Card className=" border-[1px] border-[#E5E2E2] rounded-[8px]  flex flex-col p-[14px]">
               <AgentperformancePlan agentperformanceplanData={agentperformanceplanData} />
             </Card>
           </DashboardInnerPlans>

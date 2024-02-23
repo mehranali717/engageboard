@@ -19,9 +19,9 @@ const headerData = [
     { image: profileIcon }
 ]
 const Mainlayout = ({ children }) => <div className="flex">
-    <Sidebar className="w-[278px] lg:w-[200px] 2xl:w-[240px] 3xl:w-[278px] bg-[#009E9B] ps-[30px] py-[50px]" image={sidebarImage} Navbardata={Navbardata} imgWrapper="ps-[8px] pb-[82px] pe-[38px]" />
+    <Sidebar className="w-[278px] lg:w-[200px] 2xl:w-[240px] 3xl:w-[278px] bg-[#009E9B] ps-[30px] py-[50px]" image={sidebarImage} Navbardata={Navbardata} imgWrapper="ps-[8px] pb-[55px] 3xl:pb-[82px] pe-[38px]" />
     <div className="flex-1" >
-        <div className="pt-[39px] pb-[51px] me-[56px]">
+        <div className="pt-[20px] pb-[25px] 2xl:pt-[39px] 2xl:pb-[51px] me-[56px]">
             <Header headerData={headerData} />
         </div>
         {children}
